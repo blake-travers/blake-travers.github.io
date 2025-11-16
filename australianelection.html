@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Projects | Blake</title>
+
+    <style>
+        /* ---- Base Styles ---- */
+        :root
+        {
+            --bg: #f6f6f6;
+            --card-bg-border: #e9e9e9;
+            --accent: #486095;
+            --text: #111827;
+            --muted: #6b7280;
+            --tag: #e5e7eb;
+        }
+
+        body
+        {
+            font-family: "Calibri", system-ui, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header
+        {
+            background: var(--accent);
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        header h1
+        {
+            margin: 0;
+            font-size: 2.4rem;
+        }
+
+        header p
+        {
+            margin-top: 0.5rem;
+            color: white;
+        }
+
+        main
+        {
+            max-width: 1291px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            display: grid;
+            gap: 30px;
+        }
+
+        .main_project
+        {
+            display: block;
+            background: white;
+            text-decoration: none;
+            color: inherit;
+            border-radius: 12px;
+            padding: 1.5rem;
+            border: 2px solid var(--card-bg-border);
+            /*box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);*/
+            transition: transform 0.2s ease, border 0.2s ease;;
+            min-width: 420px;
+            min-height: 2650px;
+        }
+        footer
+        {
+            text-align: center;
+            margin-top: 2rem;
+            padding: 1rem;
+            font-size: 0.9rem;
+            color: var(--muted);
+        }
+
+        .back-btn
+        {
+            position: absolute;
+            left: 2rem;
+            top: 2rem;
+            background: white;
+            color: var(--accent);
+            border: 2px solid var(--accent);
+            border-radius: 8px;
+            padding: 0.4rem 0.8rem;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.2s ease, color 0.2s ease, transform 0.1s ease;
+        }
+
+        .back-btn:hover
+        {
+            background: var(--muted);
+            color: white;
+            transform: translateY(1px);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Blake Travers</h1>
+        <p>Showcase of different ideas, applications, and builds.</p>
+        <button class="back-btn" onclick="history.back()">← Back</button>
+    </header>
+
+    <main>
+        <section class="main_project">
+            <div class='tableauPlaceholder' id='viz1762563089369' style='position: relative;'>
+                <noscript>
+                    <a href='#'>
+                        <img alt='Dashboard ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Di&#47;Divisiondatafromthe2025AustralianElectionv1&#47;Dashboard&#47;1_rss.png' style='border: none' />
+                    </a>
+                </noscript>
+                <object class='tableauViz'  style='display:none;'>
+                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                    <param name='embed_code_version' value='3' />
+                    <param name='name' value='Divisiondatafromthe2025AustralianElectionv1&#47;Dashboard' />
+                    <param name='toolbar' value='yes' />
+                    <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Di&#47;Divisiondatafromthe2025AustralianElectionv1&#47;Dashboard&#47;1.png' />
+                    <param name='animate_transition' value='yes' />
+                    <param name='display_static_image' value='yes' />
+                    <param name='display_spinner' value='yes' />
+                    <param name='display_overlay' value='yes' />
+                    <param name='display_count' value='yes' />
+                    <param name='language' value='en-US' />
+                    <param name='filter' value='publish=yes' />
+                </object>
+            </div>
+            <script type='text/javascript'>
+                var divElement = document.getElementById('viz1762563089369');
+                var vizElement = divElement.getElementsByTagName('object')[0];
+                vizElement.style.width = '100%';
+                vizElement.style.height = '100%';
+                var scriptElement = document.createElement('script');
+                scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                vizElement.parentNode.insertBefore(scriptElement, vizElement);               
+            </script>
+        </section>
+    </main>
+
+    <footer>
+        © 2025 Blake Travers
+    </footer>
+</body>
+</html>
