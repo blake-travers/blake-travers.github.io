@@ -5,132 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Projects | Blake</title>
 
-    <style>
-        :root
-        {
-            --bg: #f6f6f6;
-            --card-bg-border: #e9e9e9;
-            --accent: #486095;
-            --text: #111827;
-            --muted: #6b7280;
-            --tag: #e5e7eb;
-        }
-
-        body
-        {
-            font-family: "Calibri", system-ui, sans-serif;
-            background-color: var(--bg);
-            color: var(--text);
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-        }
-
-        header
-        {
-            background: var(--accent);
-            color: white;
-            padding: 2rem 1rem;
-            text-align: center;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        header h1
-        {
-            margin: 0;
-            font-size: 2.4rem;
-        }
-
-        header p
-        {
-            margin-top: 0.5rem;
-            color: white;
-        }
-
-        main
-        {
-            max-width: 1080px;
-            margin: 2rem auto;
-            padding: 0 1rem;
-            display: grid;
-            gap: 30px;
-        }
-
-        .project
-        {
-            display: block;
-            background: white;
-            text-decoration: none;
-            color: inherit;
-            border-radius: 12px;
-            padding: 1.5rem;
-            border: 2px solid var(--card-bg-border);
-            /*box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);*/
-            transition: transform 0.2s ease, border 0.2s ease;;
-            min-width: 420px;
-            min-height: 420px;
-        }
-
-        .project:hover
-        {
-            transform: translateY(-3px);
-            border: 2px solid var(--accent);
-            cursor: pointer;
-        }
-
-        .project h2
-        {
-            margin-top: 0;
-            font-size: 1.3rem;
-            color: var(--accent);
-        }
-
-        .project p
-        {
-            color: var(--muted);
-        }
-
-        .tags
-        {
-            margin: 0rem;
-        }
-
-        .tag
-        {
-            display: inline-block;
-            background: var(--tag);
-            color: var(--text);
-            border-radius: 8px;
-            padding: 0.25rem 0.6rem;
-            font-size: 0.8rem;
-            margin-right: 0.3rem;
-            margin-top: 0.75rem;
-        }
-
-        footer
-        {
-            text-align: center;
-            margin-top: 2rem;
-            padding: 1rem;
-            font-size: 0.9rem;
-            color: var(--muted);
-        }
-
-        @media (min-width: 840px)
-        {
-            main
-            {
-                grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
-            }
-        }
-
-        .visualisation-thumb
-        {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -140,14 +15,22 @@
     </header>
 
     <main>
-        <a href="mappopulation.html"  class="project">
+        <a href="mappopulation.html" class="project project-featured">
             <h2>Map Population Density Application</h2>
             <p>
-            Draw a Shape to find out its population
+            Interactive
             </p>
+            <img 
+                src="map-preview-image.png"
+                alt="Map Population Preview Image"
+                class="visualisation-thumb"
+            >
             <div class="tags">
-                <span class="tag">Folium</span>
-                <span class="tag">Raster</span>
+                <span class="tag">AWS Lambda</span>
+                <span class="tag">AWS S3</span>
+                <span class="tag">GDAL/Rasterio</span>
+                <span class="tag">Cloud-Optimised-GeoTIFFs</span>
+                <span class="tag">Population Aggregation</span>
             </div>
         </a>
 
@@ -187,19 +70,6 @@
                 <span class="tag">2025 Aus Election</span>
                 <span class="tag">Tableau</span>
                 <span class="tag">SQL</span>
-            </div>
-        </a>
-
-        <a href="machinelearning.html"  class="project">
-            <h2>Reinforcement Learning Group Project</h2>
-            <p>
-            TODO
-            </p>
-            <div class="tags">
-                <span class="tag">Reinforcement Learning</span>
-                <span class="tag">A* Pathfinding</span>
-                <span class="tag">Preprint</span>
-                <span class="tag">Game Simulation</span>
             </div>
         </a>
     </main>
