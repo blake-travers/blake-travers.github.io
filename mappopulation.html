@@ -11,14 +11,43 @@
 <body>
     <header>
         <h1>Blake Travers</h1>
-        <p>Showcase of different ideas, applications, and builds.</p>
         <button class="back-btn" onclick="window.location.href='index.html'">← Back</button>
     </header>
 
-    <main>
+
+    <main class="content">
+        <h2>Map Population</h2>
         <p>
-            TODO
+        Interactive tool that calculates the population inside each user-drawn shape.
+
+        Primary Features include:
+        
+        <ul>
+            <li><b>Sub-Second population aggregation. </b>Through the use of Quadtrees,
+                Cloud-Optimised GeoTIFFs and efficient overview reading through GDAL,
+                the tool can guarantee fast polygon queries (typically &lt; 0.5s).</li>
+            <li> <b>Dynamic-resolution Raster.</b>
+                Dynamically selects dataset resolution & recursion depth based on polygon size and complexity
+                to minimise computational cost while preserving accuracy.</li>
+            <li><b>Serverless Backend using AWS.</b> Utilises Zip-based AWS Lambda & S3 Rasters to enable scaling without needing the infrastructure of a server.</li>
+                
+        </ul>
         </p>
+
+        <div class="links">
+            <a href="https://blake-travers.github.io/MapPopulation/" target="_blank">
+                Live app →
+            </a>
+            <a href="https://github.com/blake-travers/MapPopulation" target="_blank">
+                Source code →
+            </a>
+        </div>
+
+        <img
+            src="map-preview-image2.png"
+            alt="Map Population preview"
+            class="project-preview"
+        />
     </main>
 
     <footer>
