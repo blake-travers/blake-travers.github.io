@@ -134,6 +134,7 @@ footer
 .visualisation-thumb
 {
     width: 100%;
+    border-radius: 4px;
     height: auto;
     display: block;
     border-radius: 12px;
