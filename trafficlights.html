@@ -14,8 +14,49 @@
         <button class="back-btn" onclick="window.location.href='index.html'">← Back</button>
     </header>
 
+    <main class="content">
+        <h2>Permissive Traffic Light RL agent</h2>
+        <p>
+        Reinforcement Learning Project aiming to explore the viability of different RL concepts in a complex single-intersection traffic simulation.
+
+        Primary Features include:
+        
+        <ul>
+            <li><b>Complex intersection dynamics. </b>Models realistic urban contraints including permissive yielding, shared, lanes, and multiple
+                vehicle types. Agent learns a sophisticated policy that maximises traffic throughput.
+            </li>
+            <li><b>State-of-the-art Deep RL. </b> Employs a Graph Neural Network (GNN) for spatial state representation, utilising a Double DQN architecture. Value
+                Decomposition helps solve credit assignment, as well as combinatorically expanding the action space such that every combination of
+                safe traffic light phases can be chosen by the agent.
+            </li>
+            <li>
+                <b>High-fidelity simulation. </b>Utilises SUMO (Microsimulator) to provide an efficient environment that encapsulates granular
+                vehicle movements, and allowing realistic traffic light phase transitions.
+            </li>
+        </ul>
+        </p>
+
+        <div class="links">
+            <a href="https://github.com/blake-travers/yield-junction-controller" target="_blank">
+                Source code
+            </a>
+            <a href="https://github.com/blake-travers/yield-junction-controller/blob/main/combined_metrics.png" target="_blank">
+                Report
+            </a>
+        </div>
+
+        <video class="junctionvideo"
+            src="RLJunctionIntersection.mp4"
+            autoplay
+            loop
+            muted
+            playsinline
+            preload="auto">
+        </video>
+    </main>
+
     <footer>
-        © 2025 Blake Travers
+        © 2026 Blake Travers
     </footer>
 </body>
 </html>

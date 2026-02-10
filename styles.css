@@ -131,13 +131,13 @@ footer
     }
 }
 
-.visualisation-thumb
-{
+.visualisation-thumb {
     width: 100%;
-    border-radius: 4px;
-    height: auto;
-    display: block;
+    height: 325px; /* Restrict to your preferred pixel value */
+    object-fit: cover; /* This crops the image to fill the area without distortion */
+    object-position: center; /* Centers the image within the crop area */
     border-radius: 12px;
+    display: block;
 }
 
 .back-btn
@@ -230,5 +230,16 @@ video {
     max-width: 900px;
     border-radius: 12px;
     display: block;
-    margin: 2rem auto;
+    margin: 2.5rem auto;
+    border: 2px solid var(--card-bg-border);
+    object-position: center;
+}
+
+.junctionvideo {
+    width: 100%;           
+    max-width: 800px;
+    height: 650px;
+    object-fit: cover;
+
+
 }
